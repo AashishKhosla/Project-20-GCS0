@@ -18,7 +18,7 @@ function setup() {
   car.shapeColor=color(255,255,255);
 
 
-  wall=createSprite(1500,20,60,height/2)
+  wall=createSprite(1500,200,60,height/2)
   wall.shapeColor=color(80,80,80)
 }
 
@@ -38,10 +38,11 @@ function draw() {
       car.shapeColor=color(230,230,0);
     }
   
-    if(deformation,100)
+    if(deformation<100)
     {
       car.shapeColor=color(0,255,0);
     }
-  drawSprites();
   }
+    drawSprites();
+  
 }
